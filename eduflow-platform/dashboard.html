@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - EduFlow</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background: #f1f5f9;">
+
+    <div style="display: flex; min-height: 100vh;">
+        <!-- Sidebar -->
+        <aside
+            style="width: 280px; background: white; border-right: 1px solid var(--border); padding: 32px 24px; display: flex; flex-direction: column; position: fixed; height: 100vh;">
+            <a href="index.html" class="logo" style="margin-bottom: 48px;">
+                <i class="fa-solid fa-graduation-cap"></i>
+                EduFlow
+            </a>
+
+            <nav style="flex: 1;">
+                <ul style="display: flex; flex-direction: column; gap: 8px;">
+                    <li><a href="#"
+                            style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; background: rgba(67, 97, 238, 0.1); color: var(--primary); font-weight: 700;"><i
+                                class="fa-solid fa-house"></i> Overview</a></li>
+                    <li><a href="#"
+                            style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; color: var(--text-muted);"><i
+                                class="fa-solid fa-book"></i> My Courses</a></li>
+                    <li><a href="#"
+                            style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; color: var(--text-muted);"><i
+                                class="fa-solid fa-calendar"></i> Schedule</a></li>
+                    <li><a href="#"
+                            style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; color: var(--text-muted);"><i
+                                class="fa-solid fa-message"></i> Messages</a></li>
+                    <li><a href="#"
+                            style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; color: var(--text-muted);"><i
+                                class="fa-solid fa-gear"></i> Settings</a></li>
+                </ul>
+            </nav>
+
+            <div
+                style="background: var(--bg-main); padding: 20px; border-radius: var(--radius-md); text-align: center;">
+                <h5 style="margin-bottom: 8px;">Upgrade to Pro</h5>
+                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 16px;">Get unlimited access to all
+                    courses and features.</p>
+                <a href="pricing.html" class="btn btn-primary"
+                    style="padding: 8px 16px; width: 100%; display: block;">Upgrade</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main style="flex: 1; margin-left: 280px; padding: 40px 60px;">
+            <header
+                style="display: flex; justify-content: space-between; align-items: center; background: none; border: none; box-shadow: none; position: static; padding: 0; margin-bottom: 40px;">
+                <div>
+                    <h1 style="font-size: 32px;">Welcome back, John! 👋</h1>
+                    <p style="color: var(--text-muted);">You've completed 75% of your weekly goal.</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 24px;">
+                    <div class="search-box"
+                        style="background: white; border: 1px solid var(--border); padding: 10px 16px; border-radius: 12px; display: flex; align-items: center; gap: 8px; width: 300px;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: var(--text-muted);"></i>
+                        <input type="text" placeholder="Search courses..."
+                            style="border: none; outline: none; width: 100%; font-size: 14px;">
+                    </div>
+                    <div style="position: relative; cursor: pointer;">
+                        <i class="fa-solid fa-bell" style="font-size: 20px; color: var(--text-muted);"></i>
+                        <span
+                            style="position: absolute; top: -4px; right: -4px; width: 8px; height: 8px; background: var(--danger); border-radius: 50%; border: 2px solid #f1f5f9;"></span>
+                    </div>
+                    <img src="https://i.pravatar.cc/40?u=9" style="border-radius: 50%; cursor: pointer;">
+                </div>
+            </header>
+
+            <!-- Stats Grid -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 40px;">
+                <div
+                    style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div
+                        style="background: rgba(67, 97, 238, 0.1); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); margin-bottom: 16px;">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <h2 style="font-size: 28px; margin: 0;">12</h2>
+                    <p style="color: var(--text-muted); font-size: 14px;">Active Courses</p>
+                </div>
+                <div
+                    style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div
+                        style="background: rgba(74, 222, 128, 0.1); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--success); margin-bottom: 16px;">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+                    <h2 style="font-size: 28px; margin: 0;">8</h2>
+                    <p style="color: var(--text-muted); font-size: 14px;">Completed</p>
+                </div>
+                <div
+                    style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div
+                        style="background: rgba(251, 191, 36, 0.1); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--warning); margin-bottom: 16px;">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h2 style="font-size: 28px; margin: 0;">48h</h2>
+                    <p style="color: var(--text-muted); font-size: 14px;">Learning Time</p>
+                </div>
+                <div
+                    style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div
+                        style="background: rgba(76, 201, 240, 0.1); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent); margin-bottom: 16px;">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h2 style="font-size: 28px; margin: 0;">24</h2>
+                    <p style="color: var(--text-muted); font-size: 14px;">Certificates</p>
+                </div>
+            </div>
+
+            <!-- Current Courses & Continue Learning -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;">
+                <!-- Recent Courses -->
+                <div>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <h3 style="font-size: 24px;">Recent Courses</h3>
+                        <a href="courses.html" style="color: var(--primary); font-size: 14px; font-weight: 700;">View
+                            All</a>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <!-- Course Row 1 -->
+                        <div
+                            style="background: white; padding: 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); display: flex; align-items: center; gap: 20px;">
+                            <div
+                                style="width: 100px; height: 64px; border-radius: 8px; background: #e2e8f0; overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="margin-bottom: 4px;">UI/UX Design Fundamentals</h4>
+                                <div style="display: flex; gap: 12px; font-size: 12px; color: var(--text-muted);">
+                                    <span><i class="fa-solid fa-video"></i> 12/24 Lessons</span>
+                                    <span><i class="fa-solid fa-user"></i> Alex Johnson</span>
+                                </div>
+                            </div>
+                            <div style="width: 150px;">
+                                <div
+                                    style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 12px; font-weight: 700;">
+                                    <span>Progress</span>
+                                    <span>50%</span>
+                                </div>
+                                <div style="height: 6px; background: #f1f5f9; border-radius: 10px; overflow: hidden;">
+                                    <div style="width: 50%; height: 100%; background: var(--primary);"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary" style="padding: 8px 16px;">Resume</a>
+                        </div>
+
+                        <!-- Course Row 2 -->
+                        <div
+                            style="background: white; padding: 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); display: flex; align-items: center; gap: 20px;">
+                            <div
+                                style="width: 100px; height: 64px; border-radius: 8px; background: #e2e8f0; overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2031&auto=format&fit=crop"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="margin-bottom: 4px;">Full-Stack Node.js</h4>
+                                <div style="display: flex; gap: 12px; font-size: 12px; color: var(--text-muted);">
+                                    <span><i class="fa-solid fa-video"></i> 4/32 Lessons</span>
+                                    <span><i class="fa-solid fa-user"></i> Sarah Chen</span>
+                                </div>
+                            </div>
+                            <div style="width: 150px;">
+                                <div
+                                    style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 12px; font-weight: 700;">
+                                    <span>Progress</span>
+                                    <span>12%</span>
+                                </div>
+                                <div style="height: 6px; background: #f1f5f9; border-radius: 10px; overflow: hidden;">
+                                    <div style="width: 12%; height: 100%; background: var(--warning);"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline" style="padding: 8px 16px;">Resume</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Schedule -->
+                <div>
+                    <h3 style="font-size: 24px; margin-bottom: 24px;">Upcoming Classes</h3>
+                    <div
+                        style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; gap: 16px; align-items: center;">
+                                <div
+                                    style="background: #f1f5f9; padding: 10px; border-radius: 12px; text-align: center; min-width: 50px;">
+                                    <span style="display: block; font-size: 18px; font-weight: 800;">12</span>
+                                    <span
+                                        style="display: block; font-size: 10px; color: var(--text-muted); text-transform: uppercase;">Jan</span>
+                                </div>
+                                <div>
+                                    <h5 style="margin: 0; font-size: 15px;">Advanced prototyping</h5>
+                                    <p style="margin: 0; font-size: 12px; color: var(--text-muted);">10:00 AM - 11:30 AM
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 16px; align-items: center;">
+                                <div
+                                    style="background: #f1f5f9; padding: 10px; border-radius: 12px; text-align: center; min-width: 50px; border-left: 4px solid var(--primary);">
+                                    <span style="display: block; font-size: 18px; font-weight: 800;">14</span>
+                                    <span
+                                        style="display: block; font-size: 10px; color: var(--text-muted); text-transform: uppercase;">Jan</span>
+                                </div>
+                                <div>
+                                    <h5 style="margin: 0; font-size: 15px;">Database Management</h5>
+                                    <p style="margin: 0; font-size: 12px; color: var(--text-muted);">02:00 PM - 03:30 PM
+                                    </p>
+                                </div>
+                                <span
+                                    style="background: rgba(67, 97, 238, 0.1); color: var(--primary); padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; margin-left: auto;">LIVE</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline"
+                            style="display: block; width: 100%; text-align: center; margin-top: 24px; font-size: 12px;">View
+                            Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
